@@ -1,16 +1,19 @@
 
-public class ContaCorrente extends Conta {
+public class ChequeEspecial extends Conta {
 	
-	public ContaCorrente(Cliente cliente) {
+	private static Cliente cliente;
+
+	public ChequeEspecial() {
 		super(cliente);		
 	}
 
-	@Override
-	public void imprimirExtratoContaCorrente() {
-		System.out.println("=== Extrato Conta Corrente ===");
+	public void imprimirExtratoChequeEspecial() {
+		System.out.println("=== Saldo Cheque Especial ===");
 		super.imprimirInfosComuns();
 		
-	}
+	
+
+}
 
 	@Override
 	public void imprimirExtratoContaPoupanca() {
@@ -19,9 +22,8 @@ public class ContaCorrente extends Conta {
 	}
 
 	@Override
-	public void imprimirExtratoChequeEspecial() {
+	public void imprimirExtratoContaCorrente() {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
@@ -35,6 +37,4 @@ public class ContaCorrente extends Conta {
 		// TODO Auto-generated method stub
 		
 	}
-
-	
 }

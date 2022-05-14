@@ -7,6 +7,15 @@ public interface IConta {
 	
 	void transferir(double valor, Conta contaDestino);
 	
-	void imprimirExtrato();
+	void transferirValor(double valor, ContaPoupanca contaDestino);
+	
+	void chequeEspecial (double valor2);
+	
+	void imprimirExtratoContaPoupanca();
 
+	void imprimirExtratoContaCorrente();
+	
+	void imprimirExtratoChequeEspecial();
+
+	void transferir(double valor, ContaPoupanca poupanca);
 }
