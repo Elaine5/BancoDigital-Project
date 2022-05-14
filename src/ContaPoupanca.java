@@ -80,5 +80,11 @@ public class ContaPoupanca implements IConta{
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public void pix(double valor, ContaPoupanca poupanca) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

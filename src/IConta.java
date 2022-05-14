@@ -18,4 +18,6 @@ public interface IConta {
 	void imprimirExtratoChequeEspecial();
 
 	void transferir(double valor, ContaPoupanca poupanca);
+	
+	void pix(double valor, ContaPoupanca poupanca);
 }
